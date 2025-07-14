@@ -1,0 +1,520 @@
+{
+  "frames": {
+    "FruitSprites/bomb_ray.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 1278,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 1278,
+        "h": 113
+      },
+
+      "sourceSize": {
+        "w": 1280,
+        "h": 123
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/watermelonStain_5.png": {
+      "frame": {
+        "x": 1278,
+        "y": 0,
+        "w": 502,
+        "h": 416
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 2,
+        "w": 502,
+        "h": 416
+      },
+      "sourceSize": {
+        "w": 509,
+        "h": 419
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/coconutStain_2.png": {
+      "frame": {
+        "x": 1780,
+        "y": 0,
+        "w": 326,
+        "h": 268
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 4,
+        "w": 326,
+        "h": 268
+      },
+      "sourceSize": {
+        "w": 342,
+        "h": 274
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/apricotStain_3.png": {
+      "frame": {
+        "x": 1780,
+        "y": 326,
+        "w": 259,
+        "h": 304
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 4,
+        "w": 259,
+        "h": 304
+      },
+      "sourceSize": {
+        "w": 268,
+        "h": 316
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/appleStain_0.png": {
+      "frame": {
+        "x": 0,
+        "y": 113,
+        "w": 276,
+        "h": 277
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 8,
+        "w": 276,
+        "h": 277
+      },
+      "sourceSize": {
+        "w": 280,
+        "h": 289
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/guavaStain_4.png": {
+      "frame": {
+        "x": 277,
+        "y": 113,
+        "w": 227,
+        "h": 196
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 227,
+        "h": 196
+      },
+      "sourceSize": {
+        "w": 228,
+        "h": 198
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/apple_1_2.png": {
+      "frame": {
+        "x": 504,
+        "y": 113,
+        "w": 178,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/orange_0_2.png": {
+      "frame": {
+        "x": 682,
+        "y": 113,
+        "w": 178,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 5,
+        "w": 178,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/watermelon_5_2.png": {
+      "frame": {
+        "x": 860,
+        "y": 113,
+        "w": 178,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 7,
+        "w": 178,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/apricot_3_2.png": {
+      "frame": {
+        "x": 1038,
+        "y": 113,
+        "w": 174,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 7,
+        "w": 174,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 174,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/coconut_2_2.png": {
+      "frame": {
+        "x": 860,
+        "y": 203,
+        "w": 170,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 170,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 175,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/guava_4_2.png": {
+      "frame": {
+        "x": 682,
+        "y": 205,
+        "w": 163,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 163,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 164,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/bomb_2.png": {
+      "frame": {
+        "x": 504,
+        "y": 216,
+        "w": 129,
+        "h": 150
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 14,
+        "y": 0,
+        "w": 129,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 150,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/bomb_1.png": {
+      "frame": {
+        "x": 277,
+        "y": 309,
+        "w": 102,
+        "h": 150
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 26,
+        "y": 0,
+        "w": 102,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 150,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/apple_1_1.png": {
+      "frame": {
+        "x": 1030,
+        "y": 203,
+        "w": 91,
+        "h": 103
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/coconut_2_1.png": {
+      "frame": {
+        "x": 1133,
+        "y": 203,
+        "w": 85,
+        "h": 103
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 85,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 85,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/guava_4_1.png": {
+      "frame": {
+        "x": 1133,
+        "y": 288,
+        "w": 82,
+        "h": 103
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/orange_0_1.png": {
+      "frame": {
+        "x": 1030,
+        "y": 294,
+        "w": 91,
+        "h": 92
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 5,
+        "w": 91,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/watermelon_5_1.png": {
+      "frame": {
+        "x": 1122,
+        "y": 370,
+        "w": 91,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 7,
+        "w": 91,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/apricot_3_1.png": {
+      "frame": {
+        "x": 845,
+        "y": 306,
+        "w": 86,
+        "h": 90
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 7,
+        "w": 86,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 87,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "FruitSprites/orangeStain_1.png": {
+      "frame": {
+        "x": 277,
+        "y": 113,
+        "w": 227,
+        "h": 196
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 227,
+        "h": 196
+      },
+      "sourceSize": {
+        "w": 228,
+        "h": 198
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "texture.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 630
+    },
+    "scale": 1
+  }
+}
