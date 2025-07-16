@@ -3,6 +3,7 @@ import audioOnImg from "/src/assets/audio_icon_1.png"
 import audioOffImg from "/src/assets/audio_icon_2.png"
 import backbtnImg from "/src/assets/but_exit.png"
 import { btnClickSound, gamesoundTrack } from "../FruitCuttingGame/audio"
+import addButtonAnimation from "./addButtonAnimation"
 
 
 const createSettingAudiobtn = async (app, startbtn, circularTextContainer, circle, settingbtn, circle1, circularTextContainer1) => {
@@ -46,6 +47,7 @@ const createSettingAudiobtn = async (app, startbtn, circularTextContainer, circl
         btnClickSound.play()
         gamesoundTrack.play()
     })
+    addButtonAnimation(audioOn)
 
     const audioOffTexture = await Assets.load(audioOffImg)
     const audioOff = new Sprite(audioOffTexture)
@@ -61,6 +63,7 @@ const createSettingAudiobtn = async (app, startbtn, circularTextContainer, circl
         btnClickSound.play()
         gamesoundTrack.stop()
     })
+    addButtonAnimation(audioOff)
 
     const backTexture = await Assets.load(backbtnImg)
     const backbtn = new Sprite(backTexture)
@@ -87,6 +90,7 @@ const createSettingAudiobtn = async (app, startbtn, circularTextContainer, circl
         circle.visible = true
         circularTextContainer.visible = true
     })
+    addButtonAnimation(backbtn)
 }
 
 export default createSettingAudiobtn

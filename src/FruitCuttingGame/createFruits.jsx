@@ -51,7 +51,7 @@ const createWatermelon = (app, textures) => {
     return watermelon;
 };
 
-export const CreateFruits = (app, onFruitCut, onMissedFruit, onGameOver, textures) => {
+export const CreateFruits = (app, onFruitCut, onMissedFruit, onGameOver, textures, createPopAnimation) => {
     let spawnIntervalId = null;
     let isGameOver = false;
 
@@ -67,9 +67,9 @@ export const CreateFruits = (app, onFruitCut, onMissedFruit, onGameOver, texture
         fruit.type = type
 
         // Throw fruit higher and slower
-        fruit.velocityY = -Math.random() * 3 - 4// ⬆ increased height (was -10 to -20)
-        fruit.velocityX = (Math.random() - 0.5) * 7
-        fruit.gravity = 0.03;                        // ⬇ slower fall speed (was 0.5)
+        fruit.velocityY = -Math.random() * 5-7// ⬆ increased height (was -10 to -20)
+        fruit.velocityX = (Math.random() - 0.5) * 4.5
+        fruit.gravity = 0.08;                        // ⬇ slower fall speed (was 0.5)
         fruit.rotationSpeed = (Math.random() - 0.5) * 0.03 // subtle rotation
         fruit.alive = true
 
@@ -158,6 +158,11 @@ export const CreateFruits = (app, onFruitCut, onMissedFruit, onGameOver, texture
                 Destroys sliced sprites after 100ms.
                 */
             } else {
+                 fruit.alive = false;
+                fruit.visible = false;
+
+                createPopAnimation(app, fruit.x, fruit.y)
+                
                 const tex = textureMap[fruit.type];
                 if (!tex) return;
 
@@ -256,6 +261,7 @@ export const CreateFruits = (app, onFruitCut, onMissedFruit, onGameOver, texture
                     fruit.alive = false
                     fruit.visible = false
 
+                    createPopAnimation(app, fruit.x, fruit.y)
                     const tex = textureMap[fruit.type]
                     if (!tex) return
 

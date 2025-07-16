@@ -1,4 +1,5 @@
 import { Application, Assets, Circle, Container, Graphics, Sprite, Text, TextStyle } from "pixi.js"
+import { Howl } from "howler"
 import { useEffect } from "react"
 import BackgroundImg from "/src/assets/bg_game.jpg"
 import LoadingImg from "/src/assets/logo.png"
@@ -11,10 +12,12 @@ import createStartButton from "../FruitCuttingGame/startbtn.jsx"
 import createSettingButton from "./settingbtn.jsx"
 import createSettingAudiobtn from "./settingbtnAudio.jsx"
 import createRetryButton from "./retrybtn.jsx"
-import { bladSlashSound, btnClickSound, fruitMissSound, fruitsliceSound, gameOverSound } from "./audio.jsx"
+import { btnClickSound, fruitMissSound, fruitsliceSound, gameOverSound } from "./audio.jsx"
 import gameoverImg from "/src/assets/gameover.png"
 import createQuitButton from "./quitGamebtn.jsx"
 import createMouseTrail from "./mouseSlashtrail.jsx"
+import addButtonAnimation from "./addButtonAnimation.jsx"
+import createPopAnimation from "./createPopUpAnimation.jsx"
 
 export const FruitCuttingGame = () => {
     useEffect(() => {
@@ -94,8 +97,9 @@ export const FruitCuttingGame = () => {
                 // Show score and lives when we start the game 
                 scoreText.visible = true
                 livesText.visible = true
-                fruitController = CreateFruits(app, onFruitCut, onMissedFruit, onGameOver, textures)
+                fruitController = CreateFruits(app, onFruitCut, onMissedFruit, onGameOver, textures, createPopAnimation)
             })
+            addButtonAnimation(startbtn)
 
             //Hide initialy
             startbtn.visible = false
@@ -115,6 +119,7 @@ export const FruitCuttingGame = () => {
 
                 createSettingAudiobtn(app, startbtn, circle, circularTextContainer, settingbtn, circle1, circularTextContainer1)
             })
+            addButtonAnimation(settingbtn,)
             //Hide Initialy
             settingbtn.visible = false
             circularTextContainer1.visible = false
@@ -199,8 +204,9 @@ export const FruitCuttingGame = () => {
                 gameOverScoreText.visible = false
 
 
-                fruitController = CreateFruits(app, onFruitCut, onMissedFruit, onGameOver, textures)
+                fruitController = CreateFruits(app, onFruitCut, onMissedFruit, onGameOver, textures, createPopAnimation)
             })
+            addButtonAnimation(retrybtn)
             retrybtn.visible = false
             if (circle3) circle3.visible = false
             if (circularTextContainer3) circularTextContainer3.visible = false
@@ -236,6 +242,7 @@ export const FruitCuttingGame = () => {
                 gameOver.visible = false
                 gameOverScoreText.visible = false
             })
+            addButtonAnimation(quitbtn)
             quitbtn.visible = false
             quitbtnCircle.visible = false
             quitbtnCircularTextContainer.visible = false
@@ -314,10 +321,24 @@ export const FruitCuttingGame = () => {
             const onMissedFruit = () => {
                 missFruit.visible = true
                 fruitMissSound.play()
+                
+                // Miss message with fade or pop animation
+                missFruit.alpha = 1
+                missFruit.y = app.screen.height / 2
+                let elapsed = 0
+                let duration = 60
 
-                setTimeout(() => {
-                    missFruit.visible = false
-                }, 1000)
+                const animationMissFruitImg = () => {
+                    if(elapsed > duration){
+                        missFruit.visible = false
+                        app.ticker.remove(animationMissFruitImg)
+                        return
+                    }
+                    missFruit.y -= 1.5
+                    missFruit.alpha -= 1 / duration
+                    elapsed++
+                }
+                app.ticker.add(animationMissFruitImg)
 
                 LivesRef.current -= 1
                 updateLives(LivesRef.current)
